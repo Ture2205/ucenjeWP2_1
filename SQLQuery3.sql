@@ -1,3 +1,7 @@
+--use master;
+--go
+--drop database if exists edunovawp2;
+--go
 --create table razred(
 --sifra int,
 --mjesto varchar(50),
