@@ -1,3 +1,7 @@
+--use master;
+--go
+--drop database if exists edunovawp2;
+--go
 --create database ucenjeWP2;
 
 --create table student(
