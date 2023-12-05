@@ -27,3 +27,6 @@ select *from pacijent;
 insert into pacijent values('1001', 'Mario','Turèek','1995-05-22','M','Eutyrox')
 select *from lijek;
 insert into lijek values ('1001', 'na recept','1', '52', 'oralno', '2023-11-27')
+
+--Pacijent može imati više lijekova (jedan-na-više veza).
+--Svaki lijek pripada samo jednom pacijentu.
