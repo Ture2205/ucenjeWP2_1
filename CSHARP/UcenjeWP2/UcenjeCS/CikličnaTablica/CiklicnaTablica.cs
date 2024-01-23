@@ -26,7 +26,7 @@ namespace UcenjeCS.CiklicnaTablica
             int[,] Matrica = new int[red, stup];
 
 
-            //Prvi krug
+            
             for (i = 1; i <= stup; i++)
             {
                 Matrica[red - 1, stup - i] = x++;
@@ -50,7 +50,7 @@ namespace UcenjeCS.CiklicnaTablica
 
 
 
-            //Ostali krugovi
+            
             int y = 1;
             for (y = 1; y < red && y < stup; y++)
             {
@@ -103,7 +103,7 @@ namespace UcenjeCS.CiklicnaTablica
             }
 
 
-            //Ispis matrice
+            
             Console.WriteLine();
             for (i = 0; i < red; i++)
             {
