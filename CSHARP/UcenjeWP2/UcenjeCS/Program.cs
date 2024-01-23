@@ -29,7 +29,7 @@ using UcenjeCS;
 
 //UcenjeCS.E12KlasaObjekt.Program.Izvedi();
 
-
+UcenjeCS.E13Naslijedivanje.Program.Izvedi();
   
 
 
