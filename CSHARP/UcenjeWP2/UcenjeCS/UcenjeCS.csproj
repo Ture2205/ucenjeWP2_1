@@ -10,6 +10,7 @@
   <ItemGroup>
     <Folder Include="E12KlasaObjekt\Edunova\" />
     <Folder Include="LjubavniKalkulator\" />
+    <Folder Include="E13Nasljedivanje\" />
   </ItemGroup>
 
 </Project>
