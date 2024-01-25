@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UcenjeCS.E13Naslijedivanje
+namespace UcenjeCS.E13Nasljedivanje
 {
-    internal class OsobaImpl
+    internal class OsobaImpl:Osoba
     {
     }
 }
