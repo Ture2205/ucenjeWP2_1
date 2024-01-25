@@ -18,10 +18,12 @@ namespace UcenjeCS.E13Nasljedivanje
                 BrojUgovora="2/2024"
             };
 
-            
-            
+
+
 
             // Ispisati 1 iz objekta p
+
+            //Console.WriteLine("p.sifra");
 
             var pr1 = new Predavac();
             pr1.Ime = "Mario";
