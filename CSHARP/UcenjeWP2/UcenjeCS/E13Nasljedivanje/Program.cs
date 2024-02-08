@@ -15,7 +15,7 @@ namespace UcenjeCS.E13Nasljedivanje
                 Sifra = 1,
                 Ime = "Pero",
                 Prezime = "Perić",
-                BrojUgovora="2/2024"
+                BrojUgovora = "2/2024"
             };
 
 
@@ -23,17 +23,15 @@ namespace UcenjeCS.E13Nasljedivanje
 
             // Ispisati 1 iz objekta p
 
-            //Console.WriteLine("p.sifra");
-
             var pr1 = new Predavac();
             pr1.Ime = "Mario";
 
             var pr2 = new Predavac();
             pr2.Ime = "Mario";
 
-           
 
-            Console.WriteLine((pr1==pr2) + ", " + pr1.GetHashCode() 
+
+            Console.WriteLine((pr1 == pr2) + ", " + pr1.GetHashCode()
                 + " == " + pr2.GetHashCode());
 
             //var e  = new Entitet(); NE MOGU INSTANCIRATI APSTRAKTNU KLASU
@@ -60,11 +58,6 @@ namespace UcenjeCS.E13Nasljedivanje
 
             Console.WriteLine(pr1);
             Console.WriteLine(p);
-
-
-           
-
-
 
 
         }

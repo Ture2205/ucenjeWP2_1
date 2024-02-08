@@ -4,7 +4,7 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("E03")]
-    public class E03UvjetnaGrananja:ControllerBase
+    public class E03UvjetnaGrananja : ControllerBase
     {
         [HttpGet]
         [Route("zad1")]
@@ -37,7 +37,7 @@ namespace WebAPI.Controllers
 
             // rješenje 4
             return (broj % 2 != 0 ? "NE" : "") + "PARAN";
-            
+
         }
 
         [HttpGet]

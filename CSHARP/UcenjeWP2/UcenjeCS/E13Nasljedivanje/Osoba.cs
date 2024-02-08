@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E13Nasljedivanje
 {
-    internal abstract class Osoba:Entitet
+    internal abstract class Osoba : Entitet
     {
         private int NeVidim;
         protected int Vidim;
@@ -21,9 +21,9 @@ namespace UcenjeCS.E13Nasljedivanje
         }
 
         public Osoba(int sifra, string ime, string prezime, string oib, string email)
-            :base(sifra)
+            : base(sifra)
         {
-            Ime = ime; Prezime=prezime; Oib = oib; Email = email;
+            Ime = ime; Prezime = prezime; Oib = oib; Email = email;
         }
 
         public override string ToString()

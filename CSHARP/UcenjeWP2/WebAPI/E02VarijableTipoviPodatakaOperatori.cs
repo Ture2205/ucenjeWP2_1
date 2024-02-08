@@ -4,7 +4,7 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("E02")]
-    public class E02VarijableTipoviPodatakaOperatori:ControllerBase
+    public class E02VarijableTipoviPodatakaOperatori : ControllerBase
     {
         [HttpGet]
         [Route("zad1")]
@@ -44,7 +44,7 @@ namespace WebAPI.Controllers
         [Route("zad5")]
         public bool IstiSu(int a, int b)
         {
-            Console.WriteLine("a={0}",a); // pogledati u konzoli
+            Console.WriteLine("a={0}", a); // pogledati u konzoli
             // ruta vraća true ako je a jednako b, inače vraća false
             return a == b;
         }

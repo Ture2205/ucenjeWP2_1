@@ -4,20 +4,21 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("E04")]
-    public class E04Nizovi:ControllerBase
+    public class E04Nizovi : ControllerBase
     {
         [HttpPost]
         [Route("zad1")]
-        public string Zad1( string[] Podaci)
+        public string Zad1(string[] Podaci)
         {
             // Vrati prvi element primljenog niza
             return Podaci[0];
-            
+
         }
 
         [HttpPut]
         [Route("zad2")]
-        public int Zad2( string[] Podaci) {
+        public int Zad2(string[] Podaci)
+        {
 
             // Ruta prima cijele brojeve kao nizove znakova
             // Ruta će primiti 3 broja
@@ -28,13 +29,13 @@ namespace WebAPI.Controllers
             var b3 = int.Parse(Podaci[2]);
 
             // b1
-            if(b1>=b2 && b1 >= b3)
+            if (b1 >= b2 && b1 >= b3)
             {
                 return b1;
             }
 
             //b2
-            if(b2>=b1 && b2>= b3)
+            if (b2 >= b1 && b2 >= b3)
             {
                 return b2;
             }
@@ -54,6 +55,8 @@ namespace WebAPI.Controllers
             return $"{Podaci.Count()}";
         }
 
-       
+
+
+
     }
 }

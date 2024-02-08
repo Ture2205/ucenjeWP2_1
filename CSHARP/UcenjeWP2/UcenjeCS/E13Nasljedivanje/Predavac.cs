@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E13Nasljedivanje
 {
-    internal class Predavac:Osoba
+    internal class Predavac : Osoba
     {
-        public string Iban { get; set; }
 
-       
+        public string IBAN { get; set; }
 
+
+        public override string ToString()
+        {
+            return new StringBuilder(Ime).Append(' ').Append(Prezime).ToString();
+        }
     }
 }
