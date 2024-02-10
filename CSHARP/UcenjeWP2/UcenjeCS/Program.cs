@@ -2,45 +2,49 @@
 using System.Linq.Expressions;
 using UcenjeCS;
 
-//E01UlazIzlaz.Izvedi();
 
-//E02VarijableTipoviPodatakaOperatori.Izvedi();
+            //E01UlazIzlaz.Izvedi();
 
-//E03UvjetnaGrananja.Izvedi();
+            //E02VarijableTipoviPodatakaOperatori.Izvedi();
 
-//E04Nizovi.Izvedi();
+            //E03UvjetnaGrananja.Izvedi();
 
-//E05ForPetlja.Izvedi();
+            //E04Nizovi.Izvedi();
 
-//E06WhilePetlja.Izvedi();
+            //E05ForPetlja.Izvedi();
 
-//E07DoWhilePetlja.Izvedi();
+            //E06WhilePetlja.Izvedi();
 
-//E08ForEachPetlja.Izvedi();
+            //E07DoWhilePetlja.Izvedi();
 
-//E09Metode.Izvedi();
+            //E08ForEachPetlja.Izvedi();
 
-//Console.WriteLine(Z01Metode.CijeliDioZbroja(3.4,5.8));
+            //E09Metode.Izvedi();
 
-//E10ObradaIznimki.Izvedi();
+            //Console.WriteLine(Z01Metode.CijeliDioZbroja(3.4,5.8));
 
-//E11Rekurzija.Izvedi();
+            //E10ObradaIznimki.Izvedi();
 
-//Z02Vjezba.Izvedi();
+            //E11Rekurzija.Izvedi();
 
-//UcenjeCS.E12KlasaObjekt.Program.Izvedi();
+            //Z02Vjezba.Izvedi();
 
-//UcenjeCS.E13Nasljedivanje.Program.Izvedi();
+            //UcenjeCS.E12KlasaObjekt.Program.Izvedi();
 
-//UcenjeCS.E14Polimorfizam.Program.Izvedi();
+            //UcenjeCS.E13Nasljedivanje.Program.Izvedi();
 
-// ČITATI: https://github.com/tjakopec/OOP_JAVA_PHP_PYTHON_SWIFT
+            //UcenjeCS.E14Polimorfizam.Program.Izvedi();
+
+            // ČITATI: https://github.com/tjakopec/OOP_JAVA_PHP_PYTHON_SWIFT
 
 
-new UcenjeCS.E15KonzolnaAplikacija.Izbornik();
+            new UcenjeCS.E15KonzolnaAplikacija.Izbornik();
 
-//new UcenjeCS.E16Lambda.Program();
+            //new UcenjeCS.E16Lambda.Program();
 
-//new UcenjeCS.E17Delegati.Program();
+            //new UcenjeCS.E17Delegati.Program();
 
-//new UcenjeCS.E18Ekstenzije.Program();
+            //new UcenjeCS.E18Ekstenzije.Program();
+
+
+

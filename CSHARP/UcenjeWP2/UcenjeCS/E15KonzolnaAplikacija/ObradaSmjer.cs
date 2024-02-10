@@ -59,11 +59,7 @@ namespace UcenjeCS.E15KonzolnaAplikacija
                 "Unos mora biti pozitivni cijeli broj");
             s.Naziv = Pomocno.UcitajString("Unesite naziv smjera (" + s.Naziv + "): ",
                 "Unos obavezan");
-            s.Trajanje = Pomocno.ucitajCijeliBroj("Unesite trajanje smjera u satima (" + s.Trajanje + "): ",
-                "Unos mora biti cijeli pozitivni broj");
-            s.Cijena = Pomocno.ucitajDecimalniBroj("Unesite cijenu (. za decimalni dio) (" + s.Cijena + "): ", "Unos mora biti pozitivan broj");
-            s.Upisnina = Pomocno.ucitajDecimalniBroj("Unesi upisninu (. za decimalni dio) (" + s.Upisnina + "): ", "Unos mora biti pozitivan broj");
-            s.Verificiran = Pomocno.ucitajBool("Smjer verificiran? Da ili bilo što drugo za ne (" + (s.Verificiran ? "da" : "ne") + "): ");
+           s.Verificiran = Pomocno.ucitajBool("Smjer verificiran? Da ili bilo što drugo za ne (" + (s.Verificiran ? "da" : "ne") + "): ");
         }
 
         private void BrisanjeSmjera()
@@ -80,11 +76,8 @@ namespace UcenjeCS.E15KonzolnaAplikacija
                 "Unos mora biti pozitivni cijeli broj");
             s.Naziv = Pomocno.UcitajString("Unesite naziv smjera: ",
                 "Unos obavezan");
-            s.Trajanje = Pomocno.ucitajCijeliBroj("Unesite trajanje smjera u satima: ",
-                "Unos mora biti cijeli pozitivni broj");
-            s.Cijena = Pomocno.ucitajDecimalniBroj("Unesite cijenu (. za decimalni dio): ", "Unos mora biti pozitivan broj");
-            s.Upisnina = Pomocno.ucitajDecimalniBroj("Unesi upisninu (. za decimalni dio): ", "Unos mora biti pozitivan broj");
-            s.Verificiran = Pomocno.ucitajBool("Smjer verificiran? Da ili bilo što drugo za ne: ");
+           
+           s.Verificiran = Pomocno.ucitajBool("Smjer verificiran? Da ili bilo što drugo za ne: ");
             Smjerovi.Add(s);
 
         }
@@ -107,7 +100,6 @@ namespace UcenjeCS.E15KonzolnaAplikacija
             Smjerovi.Add(new Smjer { 
                 Sifra=1,
                 Naziv= "Web programiranje",
-            Trajanje=250,
             Cijena=1000,
             Upisnina=50,
             Verificiran=true});
@@ -116,7 +108,6 @@ namespace UcenjeCS.E15KonzolnaAplikacija
             {
                 Sifra = 2,
                 Naziv = "Java programiranje",
-                Trajanje = 130,
                 Cijena = 1000,
                 Upisnina = 50,
                 Verificiran = true

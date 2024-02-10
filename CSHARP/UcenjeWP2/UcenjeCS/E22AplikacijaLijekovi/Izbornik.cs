@@ -9,6 +9,6 @@ namespace UcenjeCS.E22AplikacijaLijekovi
     internal class Izbornik
     {
 
-        public 
+       
     }
 }

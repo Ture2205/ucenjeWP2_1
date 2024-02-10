@@ -46,7 +46,7 @@ namespace UcenjeCS.E15KonzolnaAplikacija
         private void OdabirStavkePocetnogIzbornika()
         {
 
-            switch (Pomocno.UcitajInt("Unesite vaš izbor: "))
+            switch (Pomocno.ucitajCijeliBroj("Unesite vaš izbor: ",""))
             {
                 case 1:
                     Console.WriteLine("*Rad sa SMJEROVIMA*");
@@ -87,7 +87,7 @@ namespace UcenjeCS.E15KonzolnaAplikacija
 
         private void OdabirStavkeIzbornikSmjera()
         {
-            switch (Pomocno.UcitajInt("Odaberi stavku izbornika: "))
+            switch (Pomocno.ucitajCijeliBroj("Odaberi stavku izbornika: ",""))
             {
                 case 1:
                     Console.WriteLine("Prikaži sve smjerove");
@@ -120,7 +120,7 @@ namespace UcenjeCS.E15KonzolnaAplikacija
         private void IzbrisiSmjer()
         {
             PrikaziSmjerove();
-            Smjerovi.RemoveAt(Pomocno.UcitajInt("Odaberi smjer za brisanje: ")-1);
+            Smjerovi.RemoveAt(Pomocno.ucitajCijeliBroj("Odaberi smjer za brisanje: ","")-1);
             IzbornikRadSaSmjerovima();
         }
 
@@ -128,9 +128,9 @@ namespace UcenjeCS.E15KonzolnaAplikacija
         private void UrediSmjer()
         {
             PrikaziSmjerove();
-            var s = Smjerovi[Pomocno.UcitajInt("Odaberi smjer za promjenu: ")-1];
-            s.Sifra = Pomocno.UcitajInt(s.Sifra + ", Unesi novu šifru: ");
-            s.Naziv = Pomocno.UcitajString(s.Naziv + ", Unesi novi naziv: ");
+            var s = Smjerovi[Pomocno.ucitajCijeliBroj("Odaberi smjer za promjenu: ","")-1];
+            s.Sifra = Pomocno.ucitajCijeliBroj(s.Sifra + ", Unesi novu šifru: ","");
+            s.Naziv = Pomocno.UcitajString(s.Naziv + ", Unesi novi naziv: ","");
             //Promjeniti ostale vrijednosti
             IzbornikRadSaSmjerovima();
         }
@@ -151,8 +151,8 @@ namespace UcenjeCS.E15KonzolnaAplikacija
         {
             Smjerovi.Add(new Smjer()
             {
-                Sifra = Pomocno.UcitajInt("Unesi šifru smjera: "),
-                Naziv = Pomocno.UcitajString("Unesi naziv smjera: "),
+                Sifra = Pomocno.ucitajCijeliBroj("Unesi šifru smjera: ",""),
+                Naziv = Pomocno.UcitajString("Unesi naziv smjera: ",""),
                 //Učitati ostale vrijednosti
                 
             });
