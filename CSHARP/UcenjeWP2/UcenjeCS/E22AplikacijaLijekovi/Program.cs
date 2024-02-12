@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace UcenjeCS.E22AplikacijaLijekovi
 {
-    internal class Izbornik
+    internal class Program
     {
-
-       
+        public Program()
+        {
+            PozdravnaPoruka.Poruka();
+        }
     }
 }
