@@ -29,13 +29,15 @@ using UcenjeCS;
 
 //Z02Vjezba.Izvedi();
 
+//VJLjubavniKalkulator.Izvedi();
+
 //UcenjeCS.E12KlasaObjekt.Program.Izvedi();
 
 //UcenjeCS.E13Nasljedivanje.Program.Izvedi();
 
 //UcenjeCS.E14Polimorfizam.Program.Izvedi();
 
-new UcenjeCS.E22AplikacijaLijekovi.Program();
+//new UcenjeCS.E22AplikacijaLijekovi.Program();
 
 
 // ČITATI: https://github.com/tjakopec/OOP_JAVA_PHP_PYTHON_SWIFT
