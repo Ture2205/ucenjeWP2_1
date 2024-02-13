@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IbanNet;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
@@ -18,6 +19,15 @@ namespace WebAPI.Controllers
             
         }
 
+        [HttpGet]
+        [Route("iban")]
+        public bool provjeri(string iban)
+        {
+            return new IbanValidator().Validate(iban).IsValid;
+            
+
+        }
+
         private int Zbroji(int prviBroj, int drugiBroj)
         {
             return prviBroj + drugiBroj;
@@ -27,42 +37,12 @@ namespace WebAPI.Controllers
         // Krierati rutu zad2 koja prima 4 cijela broja
         // i vraća razliku prvi+drugi i treći+četvrti
         // Koristite kreiranu metodu za zbroj dvaju brojeva
-        [HttpGet]
-        [Route("zad2")]
-        public int Zad2(int PrviBroj, int DrugiBroj, int TreciBroj,int CetvrtiBroj)
-        {
-            return Razlika(PrviBroj, DrugiBroj, TreciBroj, CetvrtiBroj);
-        }
-        private int Razlika(int a,int b , int c , int d)
-        {
-            return (a + b) - (c + d);
-        }
 
 
         // Krierati rutu zad3 koja prima ime grada i slovo.
         // Ruta vraća broj pojavljivanja slova u primljenom imenu grada
         // Koristiti metode
-        [HttpGet]
-        [Route("zad3")]
-        public int Zad3(string ImeGrada , string Slovo)
-        {
-            return Brojac(ImeGrada, Slovo);
-        }
 
-        private int Brojac(string imeGrada, string slovo)
-        {
-            int Ukupno = 0;
-            foreach (char c in imeGrada)
-            {
-                
-                if (c == slovo[0])
-                {
-                    Ukupno++;
 
-                }
-            }
-            return Ukupno;
-            
-        }
     }
 }
