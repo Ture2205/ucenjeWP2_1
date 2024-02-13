@@ -69,5 +69,10 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:EdunovaAPP.Models.Smjer.Naziv" -->
+        <member name="P:EdunovaAPP.Models.Smjer.Trajanje">
+            <summary>
+            trajanje u satima
+            </summary>
+        </member>
     </members>
 </doc>

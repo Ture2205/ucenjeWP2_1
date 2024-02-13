@@ -39,9 +39,26 @@ namespace EdunovaAPP.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-             return new JsonResult(_context.Smjerovi.ToList());
+             if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var smjerovi = _context.Smjerovi.ToList();
+                if (smjerovi==null || smjerovi.Count == 0)
+                {
+                    return new EmptyResult();
+                }
+                return new JsonResult(smjerovi);
+            }catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status503ServiceUnavailable,
+                    ex.Message);
+            }
         }
 
+        
 
     }
 }
