@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EdunovaAPP</name>
+    </assembly>
+    <members>
+        <member name="T:EdunovaAPP.Controllers.SmjerController">
+            <summary>
+            Namjenjeno za CRUD operacije nad entitetom smjer u bazi
+            </summary>
+        </member>
+        <member name="F:EdunovaAPP.Controllers.SmjerController._context">
+            <summary>
+            Kontest za rad s bazom koji će biti postavljen s pomoću Dependecy Injection-om
+            </summary>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.#ctor(EdunovaAPP.Data.EdunovaContext)">
+            <summary>
+            Konstruktor klase koja prima Edunova kontext
+            pomoću DI principa
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.Get">
+            <summary>
+            Dohvaća sve smjerove iz baze
+            </summary>
+            <remarks>
+            Primjer upita
+            
+               GET api/v1/Smjer
+               
+            </remarks>
+            <returns>Smjerovi u bazi</returns>
+            <response code="200">Sve OK</response>
+            <response code="400">Zahtjev nije valjan</response>
+        </member>
+        <member name="T:EdunovaAPP.Data.EdunovaContext">
+            <summary>
+            Ovo mi je datoteka gdje ću navoditi datasetove i načine spajanja u bazi
+            </summary>
+        </member>
+        <member name="M:EdunovaAPP.Data.EdunovaContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{EdunovaAPP.Data.EdunovaContext})">
+            <summary>
+            Kostruktor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:EdunovaAPP.Data.EdunovaContext.Smjerovi">
+            <summary>
+            Smjerovi u bazi
+            </summary>
+        </member>
+        <member name="T:EdunovaAPP.Models.Entitet">
+            <summary>
+            ovo je vršna nad klasa koja služi za osnovne atribute
+            tipa sifra, operater, datum unosa, promjene, itd.
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Entitet.Sifra">
+            <summary>
+            ovo svojstvo mi služi kao primarni ključ u bazi s
+            generiranjem vrijednosti identiti(1,1)
+            </summary>
+        </member>
+        <member name="T:EdunovaAPP.Models.Smjer">
+            <summary>
+            ovo mi je POCO KOJI JE MAPIRAN NA BAZU
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:EdunovaAPP.Models.Smjer.Naziv" -->
+    </members>
+</doc>
