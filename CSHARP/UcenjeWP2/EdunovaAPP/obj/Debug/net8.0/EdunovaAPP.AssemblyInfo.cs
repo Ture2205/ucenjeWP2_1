@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EdunovaAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a525c41005155522e7d17523e6b49fdba04bc281")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30fc36a3e54403b53b1575cb2812af6c685df945")]
 [assembly: System.Reflection.AssemblyProductAttribute("EdunovaAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EdunovaAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
