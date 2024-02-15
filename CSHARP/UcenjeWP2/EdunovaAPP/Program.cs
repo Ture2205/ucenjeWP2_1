@@ -57,7 +57,6 @@ if (app.Environment.IsDevelopment())
         opcije.ConfigObject.
         AdditionalItems.Add("requestSnippetsEnabled", true);
     });
-    //}
 }
 
 app.UseHttpsRedirection();
