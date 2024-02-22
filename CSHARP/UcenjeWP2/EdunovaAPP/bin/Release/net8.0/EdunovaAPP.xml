@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EdunovaAPP</name>
+    </assembly>
+    <members>
+        <member name="T:EdunovaAPP.Controllers.SmjerController">
+            <summary>
+            Namjenjeno za CRUD operacije nad entitetom smjer u bazi
+            </summary>
+        </member>
+        <member name="F:EdunovaAPP.Controllers.SmjerController._context">
+            <summary>
+            Kontest za rad s bazom koji će biti postavljen s pomoću Dependecy Injection-om
+            </summary>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.#ctor(EdunovaAPP.Data.EdunovaContext)">
+            <summary>
+            Konstruktor klase koja prima Edunova kontext
+            pomoću DI principa
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.Get">
+            <summary>
+            Dohvaća sve smjerove iz baze
+            </summary>
+            <remarks>
+            Primjer upita
+            
+               GET api/v1/Smjer
+               
+            </remarks>
+            <returns>Smjerovi u bazi</returns>
+            <response code="200">Sve OK, ako nema podataka content-length: 0 </response>
+            <response code="400">Zahtjev nije valjan</response>
+            <response code="503">Baza na koju se spajam nije dostupna</response>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.Post(EdunovaAPP.Models.Smjer)">
+            <summary>
+            Dodaje novi smjer u bazu
+            </summary>
+            <remarks>
+                POST api/v1/Smjer
+                {naziv: "Primjer naziva"}
+            </remarks>
+            <param name="smjer">Smjer za unijeti u JSON formatu</param>
+            <response code="201">Kreirano</response>
+            <response code="400">Zahtjev nije valjan (BadRequest)</response> 
+            <response code="503">Baza nedostupna iz razno raznih razloga</response> 
+            <returns>Smjer s šifrom koju je dala baza</returns>
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.Put(System.Int32,EdunovaAPP.Models.Smjer)">
+             <summary>
+             Mijenja podatke postojećeg smjera u bazi
+             </summary>
+             <remarks>
+             Primjer upita:
+            
+                PUT api/v1/smjer/1
+            
+             {
+              "sifra": 0,
+              "naziv": "Novi naziv",
+              "trajanje": 120,
+              "cijena": 890.22,
+              "upisnina": 0,
+              "verificiran": true
+             }
+            
+             </remarks>
+             <param name="sifra">Šifra smjera koji se mijenja</param>  
+             <param name="smjer">Smjer za unijeti u JSON formatu</param>  
+             <returns>Svi poslani podaci od smjera koji su spremljeni u bazi</returns>
+             <response code="200">Sve je u redu</response>
+             <response code="204">Nema u bazi smjera kojeg želimo promijeniti</response>
+             <response code="415">Nismo poslali JSON</response> 
+             <response code="503">Baza nedostupna</response> 
+        </member>
+        <member name="M:EdunovaAPP.Controllers.SmjerController.Delete(System.Int32)">
+             <summary>
+             Briše smjer iz baze
+             </summary>
+             <remarks>
+             Primjer upita:
+            
+                DELETE api/v1/smjer/1
+                
+             </remarks>
+             <param name="sifra">Šifra smjera koji se briše</param>  
+             <returns>Odgovor da li je obrisano ili ne</returns>
+             <response code="200">Sve je u redu, obrisano je u bazi</response>
+             <response code="204">Nema u bazi smjera kojeg želimo obrisati</response>
+             <response code="503">Problem s bazom</response> 
+        </member>
+        <member name="T:EdunovaAPP.Data.EdunovaContext">
+            <summary>
+            Ovo mi je datoteka gdje ću navoditi datasetove i načine spajanja u bazi
+            </summary>
+        </member>
+        <member name="M:EdunovaAPP.Data.EdunovaContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{EdunovaAPP.Data.EdunovaContext})">
+            <summary>
+            Kostruktor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:EdunovaAPP.Data.EdunovaContext.Smjerovi">
+            <summary>
+            Smjerovi u bazi
+            </summary>
+        </member>
+        <member name="T:EdunovaAPP.Models.Entitet">
+            <summary>
+            Ovo je vršna nad klasa koja služi za osnovne atribute
+            tipa sifra, operater, datum unosa, promjene, itd.
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Entitet.Sifra">
+            <summary>
+            Ovo svojstvo mi služi kao primarni ključ u bazi s
+            generiranjem vrijednosti identity(1,1)
+            </summary>
+        </member>
+        <member name="T:EdunovaAPP.Models.Smjer">
+            <summary>
+            Ovo mi je POCO koji je mapiran na bazu
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Smjer.Naziv">
+            <summary>
+            Naziv u bazi
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Smjer.Trajanje">
+            <summary>
+            Trajanje u satima
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Smjer.Cijena">
+            <summary>
+            Cijena u eurima
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Smjer.Upisnina">
+            <summary>
+            Iznos u Eurima
+            </summary>
+        </member>
+        <member name="P:EdunovaAPP.Models.Smjer.Verificiran">
+            <summary>
+            Oznaka da li je smjer verificiran od strane ministarstva ili ne
+            </summary>
+        </member>
+    </members>
+</doc>

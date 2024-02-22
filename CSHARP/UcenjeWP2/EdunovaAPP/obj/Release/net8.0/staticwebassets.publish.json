@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "fb60joijDnrmm1shdOD75VRl2025weE5we65bNhjtgk=",
+  "Source": "EdunovaAPP",
+  "BasePath": "_content/EdunovaAPP",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EdunovaAPP\\wwwroot",
+      "Source": "EdunovaAPP",
+      "ContentRoot": "C:\\Users\\noname\\Documents\\GitHub\\ucenjeWP2\\CSHARP\\UcenjeWP2\\EdunovaAPP\\wwwroot\\",
+      "BasePath": "_content/EdunovaAPP",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\noname\\Documents\\GitHub\\ucenjeWP2\\CSHARP\\UcenjeWP2\\EdunovaAPP\\wwwroot\\index.html",
+      "SourceId": "EdunovaAPP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\noname\\Documents\\GitHub\\ucenjeWP2\\CSHARP\\UcenjeWP2\\EdunovaAPP\\wwwroot\\",
+      "BasePath": "_content/EdunovaAPP",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
